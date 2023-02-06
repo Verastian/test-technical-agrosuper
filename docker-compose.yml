@@ -1,0 +1,10 @@
+version: '3'
+services:
+  react:
+    build:
+      context: ./
+    ports:
+      - "8000:8000"
+    container_name: ${VITE_REACT_APP_CONTAINER_NAME}
+    volumes:
+      - .:/usr/src/app

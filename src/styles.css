@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "GOTHAM-Thin";
+  src: url("../src/assets/fonts/Gotham-Font/Gotham-Thin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "GOTHAM-XLight";
+  src: url("../src/assets/fonts/Gotham-Font/Gotham-XLight.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "GOTHAM-Light";
+  src: url("../src/assets/fonts/Gotham-Font/Gotham-Light.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "GOTHAM-Book";
+  src: url("../src/assets/fonts/Gotham-Font/GothamBook.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "GOTHAM-Medium";
+  src: url("../src/assets/fonts/Gotham-Font/GothamMedium.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "GOTHAM-Bold";
+  src: url("../src/assets/fonts/Gotham-Font/Gotham-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "GOTHAM-Black";
+  src: url("../src/assets/fonts/Gotham-Font/Gotham-Black.otf")
+    format("opentype");
+}
+
+.font-thin {
+  font-family: "GOTHAM-Thin", sans-serif;
+}
+
+.font-xlight {
+  font-family: "GOTHAM-XLight", sans-serif;
+}
+
+.font-light {
+  font-family: "GOTHAM-Light", sans-serif;
+}
+
+.font-book {
+  font-family: "GOTHAM-Book", sans-serif;
+}
+
+.font-medium {
+  font-family: "GOTHAM-Medium", sans-serif;
+}
+
+.font-bold {
+  font-family: "GOTHAM-Bold", sans-serif;
+}
+
+.font-black {
+  font-family: "GOTHAM-Black", sans-serif;
+}
+
+body {
+  font-family: "GOTHAM-Thin", sans-serif;
+}
+/* fade */
+.transition-fade-enter {
+  opacity: 0;
+}
+.transition-fade-enter-active {
+  opacity: 1;
+  transition: opacity 3s ease-in;
+}
+.transition-fade-exit {
+  opacity: 1;
+}
+.transition-fade-exit-active {
+  opacity: 0;
+  transition: opacity 3s ease-out;
+}
+
+/* Modal */
+.transition-modal-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.transition-modal-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.transition-modal-exit {
+  opacity: 1;
+}
+
+.transition-modal-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+/* MiniTool */
+.transition-minitool-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.transition-minitool-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.transition-minitool-exit {
+  opacity: 1;
+}
+
+.transition-minitool-exit-active {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+/* Principal */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+}
