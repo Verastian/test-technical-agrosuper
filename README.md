@@ -29,6 +29,9 @@ Copy code
 
 5.  Access the application in your browser at `http://localhost:8000`
 
+pass:123123,
+username:devsafio
+
 ### Package.json Scripts
 
 The `package.json` file includes the following scripts for managing the project:
@@ -40,3 +43,4 @@ jsonCopy code
 - `npm run dev`: runs the development server for the application
 - `npm run build`: builds the application for production
 - `npm run preview`: previews the production build of the application
+
