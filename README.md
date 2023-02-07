@@ -15,7 +15,8 @@ This project uses Node.js and is pre-installed in the base image, "node:16". The
 
 1.  Clone the repository
 2.  Navigate to the project directory
-3.  Build the Docker image using the Dockerfile:
+3.  install dependencies  `npm install`
+4.  Build the Docker image using the Dockerfile:
 
 phpCopy code
 
