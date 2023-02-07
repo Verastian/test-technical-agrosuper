@@ -31,7 +31,7 @@ const WorkAreaProvider = ({ children }) => {
     };
     try {
       const response = await fetch(
-        "http://f11.cl:8090/getCarnesRealProyeccion",
+        "https://f11.cl:8090/getCarnesRealProyeccion",
         payload
       );
       const data = await response.json();
@@ -60,7 +60,7 @@ const WorkAreaProvider = ({ children }) => {
     };
     try {
       const response = await fetch(
-        "http://f11.cl:8090/obtenerVariaciones",
+        "https://f11.cl:8090/obtenerVariaciones",
         payload
       );
       const data = await response.json();
@@ -93,7 +93,7 @@ const WorkAreaProvider = ({ children }) => {
     };
     try {
       const response = await fetch(
-        "http://f11.cl:8090/probarVariable",
+        "https://f11.cl:8090/probarVariable",
         payload
       );
       const data = await response.json();
@@ -124,7 +124,7 @@ const WorkAreaProvider = ({ children }) => {
     };
     try {
       const response = await fetch(
-        "http://f11.cl:8090/editorVariables",
+        "https://f11.cl:8090/editorVariables",
         payload
       );
       const data = await response.json();
@@ -152,7 +152,10 @@ const WorkAreaProvider = ({ children }) => {
       }),
     };
     try {
-      const response = await fetch("http://f11.cl:8090/editorSemanal", payload);
+      const response = await fetch(
+        "https://f11.cl:8090/editorSemanal",
+        payload
+      );
       const data = await response.json();
       const updateData = { ...data };
       const updateValueEditorSemanal = JSON.parse(
